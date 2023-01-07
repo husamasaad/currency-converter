@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/694772d257.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Currency Converter</title>
+</head>
+<body>
+  <main class="container">
+    <div class="content">
+      <div class="from">
+        <header>
+          <span id="date">Jan 6 2023</span>
+          <span class="icon"><i class="fa-solid fa-money-bill-transfer"></i></span>
+        </header>
+        <h1 class="h1">Currency Converter</h1>
+        <div class="input">
+          <input value="1" type="number" id="amount-from">
+          <span class="">
+            <i class="fa-solid fa-caret-down"></i>
+            <span id="currency-f-list">
+              <span id="currency-from">USD</span>
+              <ul class="cur-list">
+              </ul>
+            </span>
+          </span>
+        </div>
+        <span class="exchange-i">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </span>
+      </div>
+      <div class="to">
+        <div class="input">
+          <input disabled value="1" type="number" id="amount-to">
+          <span class="">
+            <i class="fa-solid fa-caret-down"></i>
+            <span id="currency-to-list">
+              <span id="currency-to">SDG</span>
+              <ul class="cur-list">
+              </ul>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
